@@ -1,0 +1,34 @@
+[
+    {
+        "title": "Estudiar Javascript",
+        "state": "en progreso"
+    },
+    {
+        "title": "Hacer la cena",
+        "state": "pendiente"
+    },
+    {
+        "title": "Jugar al Age 2",
+        "state": "terminada"
+    },
+    {
+        "title": "Mi nueva tarea",
+        "state": "pendiente"
+    },
+    {
+        "title": "Mi nueva tarea 2",
+        "state": "pendiente"
+    },
+    {
+        "title": "Mi nueva tarea 2",
+        "state": "pendiente"
+    },
+    {
+        "title": "Mi nueva tarea 3",
+        "state": "pendiente"
+    },
+    {
+        "title": "Mi nueva tarea 4",
+        "state": "pendiente"
+    }
+]

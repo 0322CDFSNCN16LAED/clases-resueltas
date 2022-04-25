@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Estudiar Javascript",
+    "state": "en progreso"
+  },
+  {
+    "title": "Hacer la cena",
+    "state": "pendiente"
+  },
+  {
+    "title": "Jugar al Age 2",
+    "state": "terminada"
+  }
+]
