@@ -1,0 +1,70 @@
+h1 {
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+}
+
+.font-yellow {
+  color: #eac926;
+}
+.bg-yellow {
+  background-color: #eac926;
+}
+
+.font-blue {
+  color: #03264c;
+}
+.bg-blue {
+  background-color: #03264c;
+}
+
+.font-light-blue {
+  color: #1259c3;
+}
+.bg-light-blue {
+  background-color: #1259c3;
+}
+
+.font-dark-grey {
+  color: #666;
+}
+.bg-dark-grey {
+  background-color: #666;
+}
+
+.font-light-grey {
+  color: #ebebeb;
+}
+.bg-light-grey {
+  background-color: #ebebeb;
+}
+
+.font-green {
+  color: #39b54a;
+}
+.bg-green {
+  background-color: #39b54a;
+}
+
+.font-heading {
+  font-size: 24px;
+}
+
+.font-large {
+  font-size: 18px;
+}
+
+.font-medium {
+  font-size: 16px;
+}
+
+.nav-section {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-section {
+}
