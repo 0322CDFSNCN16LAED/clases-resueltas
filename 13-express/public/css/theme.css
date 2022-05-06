@@ -49,6 +49,10 @@ body {
   background-color: #39b54a;
 }
 
+.bg-white {
+  background-color: white;
+}
+
 .font-heading {
   font-size: 24px;
 }
@@ -62,7 +66,6 @@ body {
 }
 
 .nav-section {
-  margin: 0;
   padding: 0;
 }
 
@@ -80,8 +83,21 @@ body {
 }
 
 .burger-menu i {
-  width: 26px;
-  height: 26px;
+  padding: 8px;
   background-color: #1259c3;
   color: #ebebeb;
+  border-radius: 5px;
+}
+
+.truck-icon {
+  padding: 4px;
+  width: 30px;
+  height: 30px;
+  font-size: 18px;
+  border: 1px solid #39b54a;
+  border-radius: 50%;
+}
+
+.product {
+  box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
