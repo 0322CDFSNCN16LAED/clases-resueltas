@@ -114,10 +114,14 @@ body {
 }
 
 .price {
-    width: 30%;
-    min-width: max-content;
+    flex-grow: 30%;
+    padding-right: 10px;
 }
 
 .discount {
-    width: 70%;
+    flex-grow: 70%;
+}
+
+.product-title {
+    width: 100%;
 }
