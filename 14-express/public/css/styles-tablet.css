@@ -1,0 +1,15 @@
+@media (min-width: 481px) {
+    .product {
+        width: 47.5%; /* 47.5% + 1.25% * 2 de márgenes = 50% */
+    }
+    .w-md-33 {
+        width: 33.33%;
+    }
+    .burger-menu {
+        display: none;
+    }
+
+    .nav-bar {
+        display: block;
+    }
+}

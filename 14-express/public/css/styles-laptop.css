@@ -1,0 +1,10 @@
+@media (min-width: 769px) {
+    .product-title {
+        /* visibility: collapse; */
+        display: none;
+    }
+    .product {
+        box-shadow: none;
+        width: 22.5%; /* 22.5% + 1.25% * 2 de márgenes = 25% */
+    }
+}

@@ -1,0 +1,57 @@
+.p-8 {
+    padding: 8px;
+}
+
+.b-1 {
+    border-style: solid;
+    border-width: 1px;
+}
+
+.b-circle {
+    border-radius: 50%;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.w-90 {
+    width: 90%;
+}
+.w-50 {
+    width: 50%;
+}
+
+.m-center {
+    margin: 0 auto;
+}
+
+.m-8 {
+    margin: 8px;
+}
+
+.mt-8 {
+    margin-top: 8px;
+}
+.mb-8 {
+    margin-bottom: 8px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.relative {
+    position: relative;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-center {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
