@@ -1,0 +1,111 @@
+h1 {
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+}
+
+.font-yellow {
+  color: #eac926;
+}
+.bg-yellow {
+  background-color: #eac926;
+}
+
+.font-blue {
+  color: #03264c;
+}
+.bg-blue {
+  background-color: #03264c;
+}
+
+.font-light-blue {
+  color: #1259c3;
+}
+.bg-light-blue {
+  background-color: #1259c3;
+}
+
+.font-dark-grey {
+  color: #666;
+}
+.bg-dark-grey {
+  background-color: #666;
+}
+
+.font-light-grey {
+  color: #ebebeb;
+}
+.bg-light-grey {
+  background-color: #ebebeb;
+}
+.border-light-grey {
+  border-color: #ebebeb;
+}
+
+.font-green {
+  color: #39b54a;
+}
+.bg-green {
+  background-color: #39b54a;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.font-heading {
+  font-size: 24px;
+}
+
+.font-large {
+  font-size: 18px;
+}
+
+.font-medium {
+  font-size: 16px;
+}
+
+.nav-section {
+  padding: 0;
+}
+
+.nav-section li a {
+  color: black;
+  text-decoration: none;
+}
+
+.nav-section li {
+  list-style: none;
+}
+
+.burger-menu {
+  text-align: center;
+}
+
+.burger-menu i {
+  padding: 8px;
+  background-color: #1259c3;
+  color: #ebebeb;
+  border-radius: 5px;
+}
+
+.truck-icon {
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: -15px;
+}
+
+.product {
+  box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}

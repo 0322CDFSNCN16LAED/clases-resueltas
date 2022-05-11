@@ -1,0 +1,90 @@
+.p-8 {
+  padding: 8px;
+}
+
+.b-1 {
+  border-style: solid;
+  border-width: 1px;
+}
+
+.b-circle {
+  border-radius: 50%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.w-90 {
+  width: 90%;
+}
+.w-50 {
+  width: 50%;
+}
+
+.m-center {
+  margin: 0 auto;
+}
+
+.m-8 {
+  margin: 8px;
+}
+
+.mt-8 {
+  margin-top: 8px;
+}
+.mt-16 {
+  margin-top: 16px;
+}
+.mb-8 {
+  margin-bottom: 8px;
+}
+.mr-8 {
+  margin-right: 8px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.p-relative {
+  position: relative;
+}
+
+.b-top-1 {
+  border-top-width: 1px;
+  border-top-style: solid;
+}
+
+.fx {
+  display: flex;
+}
+
+.fx-wrap {
+  flex-wrap: wrap;
+}
+
+.fx-align-center {
+  align-items: center;
+}
+
+.fx-grow-70 {
+  flex-grow: 0.7;
+}
+.fx-grow-30 {
+  flex-grow: 0.3;
+}
+
+/* TABLET MQ */
+@media (min-width: 481px) {
+  .w-tablet-50 {
+    width: 50%;
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 769px) {
+  .w-desktop-25 {
+    width: 25%;
+  }
+}
