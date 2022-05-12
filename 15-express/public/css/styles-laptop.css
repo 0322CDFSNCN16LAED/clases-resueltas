@@ -1,0 +1,9 @@
+@media (min-width: 769px) {
+  .product-title {
+    /* visibility: collapse; */
+    display: none;
+  }
+  .product {
+    box-shadow: none;
+  }
+}
