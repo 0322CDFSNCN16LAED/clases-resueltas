@@ -1,6 +1,171 @@
+/* ============================================== */
+/* FORMS */
+/* ============================================== */
+.form-field {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.form-field > .form-input {
+  background-color: white;
+  border: none;
+  width: 100%;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+.form-field.error > .form-input {
+  border: 1px solid red;
+}
+
+.form-field.error > .input-option {
+  border: 1px solid red;
+}
+
+.form-field > .input-label {
+  display: block;
+  margin-bottom: 4px;
+  width: 100%;
+  font-weight: bold;
+}
+
+.form-field > .accessibility-label {
+  display: none;
+}
+
+.form-field > .input-with-button {
+  display: flex;
+  background-color: white;
+  border-radius: 5px;
+  width: 100%;
+  padding: 4px;
+}
+
+.form-field > .input-with-button > input {
+  padding: 4px;
+  flex-grow: 1;
+  border: none;
+  width: 100%;
+}
+
+.form-field > .input-with-button > .input-button {
+  padding: 4px;
+  border: none;
+  margin-left: 2px;
+  background-color: white;
+}
+
+.form-field > .error-msg {
+  display: block;
+  padding-top: 4px;
+  padding-left: 8px;
+  color: red;
+  width: 100%;
+}
+
+.button {
+  padding: 4px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 24px;
+}
+
+/* ============================================== */
+/* DISPLAY */
+/* ============================================== */
+.hide {
+  display: none;
+}
+
+/* ============================================== */
+/* SIZING */
+/* ============================================== */
+
+.w-100 {
+  width: 100%;
+}
+.w-90 {
+  width: 90%;
+}
+.w-70 {
+  width: 70%;
+}
+.w-50 {
+  width: 50%;
+}
+
+/* ============================================== */
+/* SPACING */
+/* ============================================== */
+
+.m-center {
+  margin: 0 auto;
+}
+
+.m-8 {
+  margin: 8px;
+}
+.m-4 {
+  margin: 4px;
+}
+
+.mx-4 {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+.mx-8 {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.mt-8 {
+  margin-top: 8px;
+}
+.mt-16 {
+  margin-top: 16px;
+}
+.mb-0 {
+  margin-bottom: 0;
+}
+.mb-8 {
+  margin-bottom: 8px;
+}
+.mr-8 {
+  margin-right: 8px;
+}
+
 .p-8 {
   padding: 8px;
 }
+
+.pl-8 {
+  padding-left: 8px;
+}
+
+.p-4 {
+  padding: 4px;
+}
+
+/* ============================================== */
+/* TEXT */
+/* ============================================== */
+
+.text-center {
+  text-align: center;
+}
+
+/* ============================================== */
+/* POSITION */
+/* ============================================== */
+
+.p-relative {
+  position: relative;
+}
+
+/* ============================================== */
+/* BORDERS */
+/* ============================================== */
 
 .b-1 {
   border-style: solid;
@@ -11,50 +176,28 @@
   border-radius: 50%;
 }
 
-.w-100 {
-  width: 100%;
-}
-
-.w-90 {
-  width: 90%;
-}
-.w-50 {
-  width: 50%;
-}
-
-.m-center {
-  margin: 0 auto;
-}
-
-.m-8 {
-  margin: 8px;
-}
-
-.mt-8 {
-  margin-top: 8px;
-}
-.mt-16 {
-  margin-top: 16px;
-}
-.mb-8 {
-  margin-bottom: 8px;
-}
-.mr-8 {
-  margin-right: 8px;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.p-relative {
-  position: relative;
-}
-
 .b-top-1 {
   border-top-width: 1px;
   border-top-style: solid;
 }
+
+.b-none {
+  border: none;
+}
+
+.brl-5 {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.brr-5 {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+/* ============================================== */
+/* FLEXBOX */
+/* ============================================== */
 
 .fx {
   display: flex;
@@ -68,6 +211,10 @@
   align-items: center;
 }
 
+.fx-grow-100 {
+  flex-grow: 1;
+}
+
 .fx-grow-70 {
   flex-grow: 0.7;
 }
@@ -75,16 +222,45 @@
   flex-grow: 0.3;
 }
 
-/* TABLET MQ */
-@media (min-width: 481px) {
+.fx-space-between {
+  justify-content: space-between;
+}
+
+/* ============================================== */
+/* MEDIA QUERIES: TABLET */
+/* ============================================== */
+@media (min-width: 576px) {
+  .tablet-hide {
+    display: none;
+  }
+  .tablet-fx {
+    display: flex;
+  }
   .w-tablet-50 {
     width: 50%;
   }
+  .w-tablet-70 {
+    width: 70%;
+  }
+  .w-tablet-33 {
+    width: 33%;
+  }
 }
 
-/* DESKTOP */
-@media (min-width: 769px) {
+/* ============================================== */
+/* MEDIA QUERIES: DESKTOP */
+/* ============================================== */
+@media (min-width: 992px) {
   .w-desktop-25 {
     width: 25%;
+  }
+  .w-desktop-50 {
+    width: 50%;
+  }
+  .w-desktop-70 {
+    width: 70%;
+  }
+  .w-desktop-33 {
+    width: 33%;
   }
 }

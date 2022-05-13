@@ -52,6 +52,9 @@ body {
   background-color: #39b54a;
 }
 
+.font-white {
+  color: white;
+}
 .bg-white {
   background-color: white;
 }
@@ -108,4 +111,11 @@ body {
 
 .product {
   box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+.form-field {
+  font-size: 16px;
+}
+.button {
+  font-size: 16px;
 }
