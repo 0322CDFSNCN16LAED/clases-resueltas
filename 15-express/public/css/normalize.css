@@ -119,7 +119,7 @@ samp {
  */
 
 small {
-  font-size: 80%;
+  font-size: 0.8em;
 }
 
 /**
@@ -129,7 +129,7 @@ small {
 
 sub,
 sup {
-  font-size: 75%;
+  font-size: 0.8em;
   line-height: 0;
   position: relative;
   vertical-align: baseline;
@@ -168,7 +168,7 @@ optgroup,
 select,
 textarea {
   font-family: inherit; /* 1 */
-  font-size: 100%; /* 1 */
+  font-size: 1em; /* 1 */
   line-height: 1.15; /* 1 */
   margin: 0; /* 2 */
 }
