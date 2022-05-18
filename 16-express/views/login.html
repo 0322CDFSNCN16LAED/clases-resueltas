@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mercado Liebre - Registrarse</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/utils.css" />
+
+    <link rel="stylesheet" href="/css/theme.css" />
+    <link rel="stylesheet" href="/css/styles-tablet.css" />
+    <link rel="stylesheet" href="/css/styles-laptop.css" />
+  </head>
+  <body class="bg-light-grey">
+    <header class="bg-yellow p-8">
+      <div class="fx fx-wrap fx-align-center">
+        <h1 class="w-50 w-desktop-33">
+          <img src="/images/logo-mercado-liebre.svg" alt="Mercado Liebre" />
+        </h1>
+        <form class="w-50 fx p-8 w-desktop-33">
+          <div class="form-field w-100 mb-0">
+            <div class="input-with-button">
+              <input class="form-input" type="text" name="search" />
+              <button class="input-button">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+          </div>
+        </form>
+        <p class="text-center w-100 w-desktop-33">
+          <i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta
+          de crédito
+        </p>
+      </div>
+      <nav class="nav-bar mt-8 w-100 hide tablet-fx fx-space-between">
+        <ul class="nav-section mb-8 fx">
+          <li class="mx-8"><a href="#">Ofertas</a></li>
+          <li class="mx-8"><a href="#">Tiendas Oficiales</a></li>
+          <li class="mx-8"><a href="#">Vender</a></li>
+          <li class="mx-8"><a href="#">Ayuda</a></li>
+        </ul>
+        <ul class="nav-section mb-8 fx">
+          <li class="mx-8">
+            <a href="/register"
+              >Crea tu cuenta <i class="fas fa-address-card"></i
+            ></a>
+          </li>
+          <li class="mx-8">
+            <a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a>
+          </li>
+          <li class="mx-8">
+            <a href="#">Mis Compras <i class="fas fa-shopping-basket"></i></a>
+          </li>
+        </ul>
+      </nav>
+      <div class="burger-menu font-heading tablet-hide mt-8">
+        <i class="fas fa-bars"></i>
+      </div>
+    </header>
+    <main class="p-8 w-90 w-tablet-70 m-center">
+      <form class="mt-16" action="/" method="GET">
+        <div class="form-field">
+          <label for="username" class="accessibility-label"
+            >Nombre de Usuario</label
+          >
+          <input
+            class="form-input"
+            id="username"
+            type="text"
+            name="username"
+            placeholder="Nombre de Usuario"
+          />
+        </div>
+        <div class="form-field">
+          <label for="password" class="accessibility-label">Contraseña</label>
+          <input
+            class="form-input"
+            id="password"
+            type="text"
+            name="password"
+            placeholder="Contraseña"
+          />
+        </div>
+        <button class="button font-white bg-light-blue w-100" type="submit">
+          Enviar
+        </button>
+      </form>
+    </main>
+  </body>
+</html>
