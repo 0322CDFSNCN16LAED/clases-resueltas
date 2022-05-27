@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mercado Liebre - Registrarse</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/utils.css" />
+
+    <link rel="stylesheet" href="/css/theme.css" />
+    <link rel="stylesheet" href="/css/styles-tablet.css" />
+    <link rel="stylesheet" href="/css/styles-laptop.css" />
+  </head>
+  <body class="bg-light-grey">
+    <header class="bg-yellow p-8">
+      <div class="fx fx-wrap fx-align-center">
+        <h1 class="w-50 w-desktop-33">
+          <img src="/images/logo-mercado-liebre.svg" alt="Mercado Liebre" />
+        </h1>
+        <form class="w-50 fx p-8 w-desktop-33">
+          <div class="form-field w-100 mb-0">
+            <div class="input-with-button">
+              <input class="form-input" type="text" name="search" />
+              <button class="input-button">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+          </div>
+        </form>
+        <p class="text-center w-100 w-desktop-33">
+          <i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta
+          de crédito
+        </p>
+      </div>
+      <nav class="nav-bar mt-8 w-100 hide tablet-fx fx-space-between">
+        <ul class="nav-section mb-8 fx">
+          <li class="mx-8"><a href="#">Ofertas</a></li>
+          <li class="mx-8"><a href="#">Tiendas Oficiales</a></li>
+          <li class="mx-8"><a href="#">Vender</a></li>
+          <li class="mx-8"><a href="#">Ayuda</a></li>
+        </ul>
+        <ul class="nav-section mb-8 fx">
+          <li class="mx-8">
+            <a href="/register"
+              >Crea tu cuenta <i class="fas fa-address-card"></i
+            ></a>
+          </li>
+          <li class="mx-8">
+            <a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a>
+          </li>
+          <li class="mx-8">
+            <a href="#">Mis Compras <i class="fas fa-shopping-basket"></i></a>
+          </li>
+        </ul>
+      </nav>
+      <div class="burger-menu font-heading tablet-hide mt-8">
+        <i class="fas fa-bars"></i>
+      </div>
+    </header>
+    <main class="p-8 w-90 w-tablet-70 m-center">
+      <form class="mt-16" action="/" method="GET">
+        <div class="form-field error">
+          <label for="fullname" class="accessibility-label"
+            >Nombre y apellido</label
+          >
+          <input
+            class="form-input"
+            id="fullname"
+            type="text"
+            name="fullname"
+            placeholder="Nombre y Apellido"
+          />
+          <span class="error-msg">Campo no puede estar vacío</span>
+        </div>
+        <div class="form-field">
+          <label for="username" class="accessibility-label"
+            >Nombre de Usuario</label
+          >
+          <input
+            class="form-input"
+            id="username"
+            type="text"
+            name="username"
+            placeholder="Nombre de Usuario"
+          />
+        </div>
+        <div class="form-field">
+          <label for="email" class="accessibility-label">Email</label>
+          <input
+            class="form-input"
+            id="email"
+            type="email"
+            name="email"
+            placeholder="Email"
+          />
+        </div>
+        <div class="form-field">
+          <label for="birthdate" class="input-label">Fecha de Nacimiento</label>
+          <input
+            class="form-input"
+            id="birthdate"
+            type="date"
+            name="birthdate"
+            placeholder="Fecha de Nacimiento"
+          />
+        </div>
+
+        <div class="form-field">
+          <label for="address" class="accessibility-label">Domicilio</label>
+          <input
+            class="form-input"
+            id="address"
+            type="text"
+            name="address"
+            placeholder="Domicilio"
+          />
+        </div>
+
+        <div class="form-field">
+          <label for="address" class="input-label">Perfil de Usuario</label>
+          <div class="input-option w-50">
+            <input
+              type="radio"
+              name="userprofile"
+              id="userprofile-buyer"
+              value="buyer"
+            />
+            <label for="userprofile-buyer">Comprador</label>
+          </div>
+          <div class="input-option w-50">
+            <input
+              type="radio"
+              name="userprofile"
+              id="userprofile-seller"
+              value="seller"
+            />
+            <label for="userprofile-seller">Vendedor</label>
+          </div>
+        </div>
+
+        <div class="form-field error">
+          <label for="address" class="input-label">Categorías de interés</label>
+          <div class="input-option w-100 pl-8">
+            <input
+              type="checkbox"
+              name="interests"
+              id="interests-electro"
+              value="electro"
+            />
+            <label for="interests-electro">Electro</label>
+          </div>
+          <div class="input-option w-100 pl-8">
+            <input
+              type="checkbox"
+              name="interests"
+              id="interests-fashion"
+              value="fashion"
+            />
+            <label for="interests-fashion">Moda</label>
+          </div>
+          <div class="input-option w-100 pl-8">
+            <input
+              type="checkbox"
+              name="interests"
+              id="interests-home"
+              value="home"
+            />
+            <label for="interests-home">Hogar</label>
+          </div>
+          <div class="input-option w-100 pl-8">
+            <input
+              type="checkbox"
+              name="interests"
+              id="interests-toys"
+              value="toys"
+            />
+            <label for="interests-toys">Juguetearía</label>
+          </div>
+          <div class="input-option w-100 pl-8">
+            <input
+              type="checkbox"
+              name="interests"
+              id="interests-healthylife"
+              value="healthylife"
+            />
+            <label for="interests-healthylife">Vida Sana</label>
+          </div>
+          <span class="error-msg">Debe seleccionar al menos una opción</span>
+        </div>
+        <div class="form-field">
+          <label for="profilepic" class="input-label">Foto de usuario</label>
+          <input
+            id="profilepic"
+            type="file"
+            accept="image/*"
+            name="profilepic"
+          />
+        </div>
+        <div class="form-field">
+          <label for="password" class="accessibility-label">Contraseña</label>
+          <input
+            class="form-input"
+            id="password"
+            type="text"
+            name="password"
+            placeholder="Contraseña"
+          />
+        </div>
+        <div class="form-field">
+          <label for="confirm-password" class="accessibility-label"
+            >Confirmar Contraseña</label
+          >
+          <input
+            class="form-input"
+            id="confirm-password"
+            type="password"
+            name="confirm-password"
+            placeholder="Confirmar Contraseña"
+          />
+        </div>
+        <button class="button font-white bg-light-blue w-100" type="submit">
+          Enviar
+        </button>
+        <button class="button font-white bg-dark-grey w-100" type="reset">
+          Reiniciar
+        </button>
+      </form>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+@media (min-width: 769px) {
+    .product-title {
+        /* visibility: collapse; */
+        display: none;
+    }
+
+    .product:hover .product-title {
+        /* visibility: visible; */
+        display: block;
+    }
+
+    .product {
+        box-shadow: none;
+    }
+
+    .product:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+}
