@@ -1,6 +1,6 @@
 const path = require("path");
 const fs = require("fs");
-const db = require("../data/db");
+const db = require("../models/products");
 const products = db.getAll();
 
 const controller = {

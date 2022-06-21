@@ -1,4 +1,4 @@
-const db = require("../data/db");
+const db = require("../models/products");
 
 module.exports = (req, res, next) => {
     const product = db.getOne(req.params.id);
