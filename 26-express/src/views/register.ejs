@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+    <!-- Include Head -->
+    <head>
+        <%- include('partials/head', {title: 'Registrarse'}) %>
+    </head>
+    <body>
+        <!-- Header -->
+        <%- include('partials/headerNavbar') %>
+        <!-- /Header -->
+
+        <form class="container">
+            <div class="row product-detail">
+                <div class="col-12">
+                    <label for="name" class="form-label"
+                        >Nombre y apellido:</label
+                    >
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        class="form-input"
+                    />
+                </div>
+                <div class="col-12">
+                    <label for="email" class="form-label">Email:</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        class="form-input"
+                    />
+                </div>
+                <div class="col-12">
+                    <label for="password" class="form-label">Contraseña:</label>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        class="form-input"
+                    />
+                </div>
+                <div class="col-12">
+                    <label for="rePassword" class="form-label"
+                        >Repetir Contraseña:</label
+                    >
+                    <input
+                        type="password"
+                        id="rePassword"
+                        name="rePassword"
+                        class="form-input"
+                    />
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="buy-now-button">
+                        Registrarse
+                    </button>
+                </div>
+            </div>
+        </form>
+
+        <!-- footer -->
+        <%- include('partials/footer') %>
+        <!-- /footer -->
+    </body>
+</html>
