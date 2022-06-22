@@ -9,6 +9,24 @@ module.exports = {
     showLogin: (req, res) => {
         res.render("login");
     },
+    login: (req, res) => {
+        // magia
+        const { email, password } = req.body;
+
+        const user = usersDB.findByEmail(email);
+
+        if (user && bcrypt.compareSync(password, user.password)) {
+            req.session.loggedUser = user;
+
+            res.redirect("/");
+
+            return;
+        }
+
+        res.render("login", {
+            error: true,
+        });
+    },
     register: (req, res) => {
         const errors = validationResult(req);
         if (!errors.isEmpty()) {

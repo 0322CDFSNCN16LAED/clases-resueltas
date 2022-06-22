@@ -18,4 +18,7 @@ module.exports = {
         const users = this.getAll();
         return users.length > 0 ? users[users.length - 1].id + 1 : 1;
     },
+    findByEmail: function (email) {
+        return this.getAll().find((p) => p.email == email);
+    },
 };

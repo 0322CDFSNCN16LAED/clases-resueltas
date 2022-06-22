@@ -43,6 +43,14 @@
             </ul>
 
             <ul class="right-navbar">
+                <% if (locals.loggedUser) { %>
+                <li>Bienvenido: <%= locals.loggedUser.name %></li>
+                <li>
+                    <a href="/profile/<%= locals.loggedUser.id %>/purchases"
+                        >Mis compras <i class="fas fa-shopping-basket"></i
+                    ></a>
+                </li>
+                <% } else { %>
                 <li>
                     <a href="/register"
                         >Creá tu cuenta <i class="far fa-address-card"></i
@@ -53,11 +61,7 @@
                         >Ingresá <i class="fas fa-sign-in-alt"></i
                     ></a>
                 </li>
-                <li>
-                    <a href="#"
-                        >Mis compras <i class="fas fa-shopping-basket"></i
-                    ></a>
-                </li>
+                <% } %>
             </ul>
         </nav>
     </div>

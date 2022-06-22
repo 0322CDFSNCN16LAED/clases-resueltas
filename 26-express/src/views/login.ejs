@@ -9,7 +9,11 @@
         <%- include('partials/headerNavbar') %>
         <!-- /Header -->
 
-        <form class="container">
+        <% if (locals.error) { %>
+        <div style="background-color: red">Tus credenciales están mal</div>
+        <% } %>
+
+        <form class="container" action="/login" method="POST">
             <div class="row product-detail">
                 <div class="col-12">
                     <label for="email" class="form-label">Email:</label>
