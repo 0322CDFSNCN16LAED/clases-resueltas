@@ -120,13 +120,21 @@ const moviesController = {
             })
             .catch((error) => res.send(error));
     },
-    destroy: function (req, res) {
+    // async/await
+    destroy: async function (req, res) {
         let movieId = req.params.id;
-        Movies.destroy({ where: { id: movieId }, force: true }) // force: true es para asegurar que se ejecute la acción
-            .then(() => {
-                return res.redirect("/movies");
-            })
-            .catch((error) => res.send(error));
+
+        try {
+            const movie = await Movies.findByPk(movieId);
+            if (movie) {
+                await movie.setActors([]);
+                await movie.destroy();
+            }
+        } catch (err) {
+            console.error(err);
+        }
+
+        res.redirect("/movies");
     },
 };
 
