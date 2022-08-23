@@ -4,6 +4,29 @@ import BigCard from "./components/BigCard";
 import MiniCard from "./components/MiniCard";
 import Sidebar from "./components/Sidebar";
 
+const miniCards = [
+  {
+    id: "5",
+    title: "Movies in Database",
+    value: "25",
+    icon: "fa-film",
+  },
+  {
+    id: "24",
+    title: "Total awards",
+    color: "success",
+    value: "79",
+    icon: "fa-award",
+  },
+  {
+    id: "32",
+    title: "Actors quantity",
+    color: "warning",
+    value: "49",
+    icon: "fa-user",
+  },
+];
+
 function App() {
   return (
     <div id="wrapper">
@@ -24,13 +47,9 @@ function App() {
             {/* <!-- Content Row Movies--> */}
             <div className="row">
               {/* <!-- Movies in Data Base --> */}
-              <MiniCard />
-
-              {/* <!-- Total awards --> */}
-              <MiniCard />
-
-              {/* <!-- Actors quantity --> */}
-              <MiniCard />
+              {miniCards.map((data) => {
+                return <MiniCard {...data} key={data.id} />;
+              })}
             </div>
             {/* <!-- End movies in Data Base --> */}
 
