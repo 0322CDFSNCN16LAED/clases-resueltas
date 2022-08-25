@@ -16,7 +16,7 @@ export default function MoviesList() {
                             className="table table-bordered"
                             id="dataTable"
                             width="100%"
-                            cellspacing="0"
+                            cellSpacing="0"
                         >
                             <thead>
                                 <tr>

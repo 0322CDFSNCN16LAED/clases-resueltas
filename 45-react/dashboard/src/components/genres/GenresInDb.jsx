@@ -1,29 +1,35 @@
-import React from "react";
+import React, { Component } from "react";
 import BigCard from "../BigCard";
 import Genre from "./Genre";
 
-let genres = [
-    { genre: "Acción" },
-    { genre: "Animación" },
-    { genre: "Aventura" },
-    { genre: "Ciencia Ficción" },
-    { genre: "Comedia" },
-    { genre: "Documental" },
-    { genre: "Drama" },
-    { genre: "Fantasia" },
-    { genre: "Infantiles" },
-    { genre: "Musical" },
-];
+const EXPRESS_HOST = "http://localhost:3001";
 
-function GenresInDb() {
-    return (
-        <BigCard title="Genres in Database">
-            <div className="row">
-                {genres.map((genre, index) => {
-                    return <Genre {...genre} key={index} />;
-                })}
-            </div>
-        </BigCard>
-    );
+export default class GenresInDb extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            genres: [],
+        };
+    }
+
+    async componentDidMount() {
+        const result = await fetch(`${EXPRESS_HOST}/api/genres`);
+        const genresResult = await result.json();
+        const newGenres = genresResult.data;
+        this.setState({
+            genres: newGenres,
+        });
+    }
+
+    render() {
+        return (
+            <BigCard title="Genres in Database">
+                <div className="row">
+                    {this.state.genres.map((genre) => {
+                        return <Genre {...genre} key={genre.id} />;
+                    })}
+                </div>
+            </BigCard>
+        );
+    }
 }
-export default GenresInDb;

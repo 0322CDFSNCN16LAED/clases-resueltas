@@ -13,7 +13,7 @@ const Actors = db.Actor;
 //----------------------------------
 const genresAPIController = {
     list: (req, res) => {
-        db.Genre.findAll().then((genres) => {
+        db.Genre.findAll({ include: ["movies"] }).then((genres) => {
             let respuesta = {
                 meta: {
                     status: 200,

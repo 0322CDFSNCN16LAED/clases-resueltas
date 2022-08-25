@@ -3,6 +3,10 @@ const path = require("path");
 const methodOverride = require("method-override");
 const app = express();
 
+const cors = require("cors");
+
+app.use(cors(["localhost:3000"]));
+
 //Ejecuto el llamado a mis rutas
 const indexRouter = require("./routes/index");
 const moviesRoutes = require("./routes/moviesRoutes");
