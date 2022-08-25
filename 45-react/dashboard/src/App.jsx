@@ -1,9 +1,9 @@
 import "./App.css";
 
-import BigCard from "./components/BigCard";
 import GenresInDb from "./components/genres/GenresInDb";
 import LastMovie from "./components/LastMovie";
 import MiniCard from "./components/MiniCard";
+import MoviesList from "./components/MoviesList";
 import Sidebar from "./components/Sidebar";
 
 const miniCards = [
@@ -66,6 +66,8 @@ function App() {
                             {/* <!-- Genres in DB --> */}
                             <GenresInDb />
                         </div>
+
+                        <MoviesList />
                     </div>
                     {/* <!--End Content Row Top--> */}
                 </div>
