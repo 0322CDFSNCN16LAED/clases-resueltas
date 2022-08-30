@@ -1,5 +1,7 @@
 import React from "react";
 import { Component } from "react";
+import { Route } from "react-router-dom";
+import MensajeSecreto from "../MensajeSecreto";
 import Movie from "./Movie";
 
 const EXPRESS_HOST = "http://localhost:3001";
@@ -70,6 +72,8 @@ export default class MoviesList extends Component {
                         </div>
                     </div>
                 </div>
+
+                <Route path="/movies/gatitos" component={MensajeSecreto} />
             </React.Fragment>
         );
     }

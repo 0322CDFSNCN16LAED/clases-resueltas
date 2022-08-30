@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import logoDH from "../assets/images/logo-DH.png";
 
@@ -37,10 +38,10 @@ function Sidebar() {
 
             {/* <!-- Nav Item - Pages --> */}
             <li className="nav-item">
-                <a className="nav-link collapsed" href="/">
+                <Link className="nav-link collapsed" to="/movies" exact="true">
                     <i className="fas fa-fw fa-folder"></i>
-                    <span>Pages</span>
-                </a>
+                    <span>Movies</span>
+                </Link>
             </li>
 
             {/* <!-- Nav Item - Charts --> */}

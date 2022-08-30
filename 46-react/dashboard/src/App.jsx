@@ -1,33 +1,9 @@
 import "./App.css";
-
-import GenresInDb from "./components/genres/GenresInDb";
-import LastMovie from "./components/LastMovie";
-import MiniCard from "./components/MiniCard";
+import Dashboard from "./components/Dashboard";
 import MoviesList from "./components/movies/MoviesList";
 import Sidebar from "./components/Sidebar";
 
-const miniCards = [
-    {
-        id: "5",
-        title: "Movies in Database",
-        value: "25",
-        icon: "fa-film",
-    },
-    {
-        id: "24",
-        title: "Total awards",
-        color: "success",
-        value: "79",
-        icon: "fa-award",
-    },
-    {
-        id: "32",
-        title: "Actors quantity",
-        color: "warning",
-        value: "49",
-        icon: "fa-user",
-    },
-];
+import { Route, Switch } from "react-router-dom";
 
 function App() {
     return (
@@ -42,32 +18,14 @@ function App() {
                 <div id="content">
                     {/* <!-- Content Row Top --> */}
                     <div className="container-fluid pt-5">
-                        <div className="d-sm-flex align-items-center justify-content-between mb-4">
-                            <h1 className="h3 mb-0 text-gray-800">
-                                App Dashboard
-                            </h1>
-                        </div>
-
-                        {/* <!-- Content Row Movies--> */}
-                        <div className="row">
-                            {/* <!-- Movies in Data Base --> */}
-                            {miniCards.map((data) => {
-                                return <MiniCard {...data} key={data.id} />;
-                            })}
-                        </div>
-                        {/* <!-- End movies in Data Base --> */}
-
-                        {/* <!-- Content Row Last Movie in Data Base --> */}
-                        <div className="row">
-                            {/* <!-- Last Movie in DB --> */}
-                            <LastMovie />
-                            {/* <!-- End content row last movie in Data Base --> */}
-
-                            {/* <!-- Genres in DB --> */}
-                            <GenresInDb />
-                        </div>
-
-                        <MoviesList />
+                        <Switch>
+                            <Route
+                                path="/"
+                                component={Dashboard}
+                                exact={true}
+                            />
+                            <Route path="/movies" component={MoviesList} />
+                        </Switch>
                     </div>
                     {/* <!--End Content Row Top--> */}
                 </div>
