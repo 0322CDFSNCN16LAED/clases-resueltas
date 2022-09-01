@@ -4,6 +4,7 @@ import MoviesList from "./components/movies/MoviesList";
 import Sidebar from "./components/Sidebar";
 
 import { Route, Switch } from "react-router-dom";
+import SearchMovies from "./components/movies/SearchMovies";
 
 function App() {
     return (
@@ -25,6 +26,7 @@ function App() {
                                 exact={true}
                             />
                             <Route path="/movies" component={MoviesList} />
+                            <Route path="/search" component={SearchMovies} />
                         </Switch>
                     </div>
                     {/* <!--End Content Row Top--> */}

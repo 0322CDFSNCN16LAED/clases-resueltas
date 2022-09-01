@@ -35,9 +35,9 @@ function SearchMovies() {
             </div>
             <div className="row">
                 <div className="col-12">
-                    <h2>Películas para la palabra: {keyword}</h2>
+                    <h2>Películas para la búsqueda: {keyword}</h2>
                 </div>
-                {movies.map((movie, i) => {
+                {movies.map((movie) => {
                     return <MovieCard movie={movie} key={movie.Id} />;
                 })}
             </div>

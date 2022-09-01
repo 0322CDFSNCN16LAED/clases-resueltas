@@ -43,6 +43,12 @@ function Sidebar() {
                     <span>Movies</span>
                 </Link>
             </li>
+            <li className="nav-item">
+                <Link className="nav-link collapsed" to="/search" exact="true">
+                    <i className="fas fa-fw fa-search"></i>
+                    <span>Search Movies</span>
+                </Link>
+            </li>
 
             {/* <!-- Nav Item - Charts --> */}
             <li className="nav-item">
